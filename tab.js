@@ -15,8 +15,14 @@
     //クリックしたらイベントが起こる
     const handleClick = (e) => {
         e.preventDefault();
-        console.log('Clicled!');
+        console.log('e', e);
     };
-    $nav[0].addEventListener('click',(e) => handleClick(e));
+
+    //全nav要素に対して関数を適用
+    let index = 0;
+    while (index < $nav.length){
+        $nav[index].addEventListener('click',(e) => handleClick(e));
+        index++;
+    }
 
 })();
