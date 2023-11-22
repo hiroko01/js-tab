@@ -1,28 +1,43 @@
+body {
+    background: #b28c6e;
+    font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif";
+
+}
+h1 {
+    text-align: center;
+    color: rgba( 0, 0, 0, 0.6);
+}
 .tab {
     width: 500px;
+    margin: 30px auto;
 }
 .tab-nav {
     /* 横並び */
     display: flex;
 }
 .tab-nav-item {
-    margin-right: 2px;
-    background: #ccc;
-    color: #000;
+    margin-right: 3px;
+    background: rgba( 0, 0, 0, 0.4);
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px 5px 0 0;
+    box-shadow: 2px 0px 1px rgba( 0, 0, 0, 0.3)
 }
 /* タブのアクティブ状態のためのCSS is-activeがついてる時だけ色が変わる*/
 .tab-nav-item.is-active {
-    background: #000;
-    color: #fff;
+    background: rgba( 255, 255, 255, 0.6);
+    color: rgba( 0, 0, 0, 0.9);
 }
 .tab-contents {
-    border: 1px solid #ccc;
+    background-color: rgba( 255, 255, 255, 0.6);
+    /* border: 1px solid #ccc; */
     padding: 20px;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 2px 2px 3px rgba( 0, 0, 0, 0.3)
 }
 .tab-contents-item {
     /* いったん「display:none」で要素を非表示にする */
     display: none;
+    
 }
