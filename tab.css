@@ -1,15 +1,31 @@
 body {
-    background: #b28c6e;
-    font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", "sans-serif";
-
+    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Serif JP', serif; */
+    margin: 0; /* ページのマージンをゼロに設定 */
+    padding: 0; /* ページのパディングをゼロに設定 */
+    background-image: url('./images/coffee.jpg'); /* 画像のパスを指定 */
+    background-size: cover; /* 画像をブラウザの表示領域にカバーさせる */
+    /* background-position: center; 画像を中央に配置する */
+    background-repeat: no-repeat; /* 画像の繰り返しを無効にする */
+    height: 100vh; /* ビューポートの高さいっぱいに背景を広げる */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
 }
+.home {
+    margin: 60px auto;
+}
+
+
 h1 {
     text-align: center;
-    color: rgba( 0, 0, 0, 0.6);
+    color: #fff;
 }
 .tab {
     width: 500px;
-    margin: 30px auto;
+    margin: 20px auto;
+    position: relative; /* positionを指定してz-indexが効くようにする */
 }
 .tab-nav {
     /* 横並び */
@@ -17,7 +33,7 @@ h1 {
 }
 .tab-nav-item {
     margin-right: 3px;
-    background: rgba( 0, 0, 0, 0.4);
+    background: rgba( 0, 0, 0, 0.5);
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
