@@ -24,7 +24,7 @@ h1 {
     font-size: 2rem;
 }
 .tab {
-    width: 80vw;
+    width: 500px;
     margin: 20px auto;
     position: relative; /* positionを指定してz-indexが効くようにする */
 }
@@ -57,4 +57,10 @@ h1 {
     /* いったん「display:none」で要素を非表示にする */
     display: none;
     transition: all 0.5s 0s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .tab {
+        width: 80vw;
+    }
 }
