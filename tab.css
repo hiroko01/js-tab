@@ -21,9 +21,10 @@ body {
 h1 {
     text-align: center;
     color: #fff;
+    font-size: 2rem;
 }
 .tab {
-    width: 500px;
+    width: 80vw;
     margin: 20px auto;
     position: relative; /* positionを指定してz-indexが効くようにする */
 }
@@ -55,5 +56,5 @@ h1 {
 .tab-contents-item {
     /* いったん「display:none」で要素を非表示にする */
     display: none;
-    
+    transition: all 0.5s 0s ease;
 }
